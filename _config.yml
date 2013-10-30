@@ -3,6 +3,9 @@ relative_permalinks: false
 google_analytics_id: UA-11634531-4
 gauges_id: 
 permalink: /news/:year/:month/:day/:title
+safe: true
+lsi: false
+pygments: true
 slides:
     version: 1.4
     executable: java -jar sikuli-slides-1.4.0.jar
