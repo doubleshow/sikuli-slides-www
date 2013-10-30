@@ -12,59 +12,32 @@ Sikuli Slides can understand slides made by Microsoft Powerpoint or Google Prese
 
 1. Open the helloworld example in the Google Presentation editor. Use the following link: [helloworld](https://docs.google.com/presentation/d/1w48gExh5oLIT0J8xYXR1RxpqTrZTXJC8OR4UXxShTQ8/edit?usp=sharing).	
 2. Make a copy so you can edit.
-3. On Slide 1, change the URL to the URL of your own website.
+3. On Slide 1,  the action is to open the URL of the United Nations in the default web browser.
+   <img src="/img/gdrive_slide1.png"  class="whole img-polaroid"/>
 
-   <img src="/img/gdrive_slide1.png"  class="half img-polaroid"/>
-   <img src="/img/gdrive_change_url.png"  class="half img-polaroid"/>
+4. Change the URL to the URL of another website, for example, http://slides.sikuli.org.
+   <img src="/img/gdrive_change_url.png"  class="whole img-polaroid"/>
 
-4. On Slide 2, change the screenshot to one of your own website. 
+5. On Slide 2, the action is to display a greeting message and at the same time click on the logo image as indicated in the screenshot.
+   <img src="/img/gdrive_slide2.png"  class="whole img-polaroid"/>
 
-   <img src="/img/gdrive_slide2.png"  class="half img-polaroid"/>
-   <img src="/img/gdrive_change_screenshot.png"  class="half img-polaroid"/>
+6. Replace the screenshot image with the screenshot of another website.
+   <img src="/img/gdrive_change_screenshot.png"  class="whole img-polaroid"/>
 
-5. Adjust the location and size of the red rectangle to cover the target
-   to click, in this case, the "Contact" tab.
+7. Let's suppose the new target to click is the image of the computer monitor. 
+Adjust the location and size of the red rectangle to cover the target
+   <img src="/img/gdrive_adjust_box.png"  class="whole img-polaroid"/>
 
-   <img src="/img/gdrive_change_screenshot.png"  class="half img-polaroid"/>
-   <img src="/img/gdrive_adjust_box.png"  class="half img-polaroid"/>
+8. Also, change the text of the greeting message.
+   <img src="/img/gdrive_change_text.png"  class="whole img-polaroid"/>
 
-6. Change the Sharing setting to "Anyone who has the link can access. No sign-in required." and locate the "Link to Share" URL.
+9. Now, download the slides as a PowerPoint PPTX file.
+   <img src="/img/gdrive_download.png"  class="whole img-polaroid"/>
 
-   <img src="/img/gdrive_link_to_share.png"  class="half img-polaroid"/>
-
-7. Execute your slides from the command line. Use the "Link to Share" URL as the argument.
-
-{% highlight bash %}
-$ {{site.slides.executable}} execute https://docs.google.com/presentation/d/1bODdu4SOD49Z_i9Sq7qJpwmxbnnMx6ULvgNc3wQGYfw/edit?usp=sharing
-{% endhighlight %}
+10. Drag the file to the Sikuli Slides window. Your slides are ready to execute!
+   <img src="/img/gdrive_ready_to_execute.png"  class="whole img-polaroid"/>
 
 
-### Offline Editor: Microsoft Powerpoint
 
-If you wish to edit the slides offline, you can use Microsoft Powerpoint.
-
-1. Download the helloworld example slides as a .pptx file: [helloworld.pptx](https://docs.google.com/feeds/download/presentations/Export?id=1w48gExh5oLIT0J8xYXR1RxpqTrZTXJC8OR4UXxShTQ8&&exportFormat=pptx)
-2. Open the file in Microsoft PowerPoint. It must be a version that supports the `.pptx` format.
-3. On Slide 1, change the URL to your the URL of your own website.
-
-   <img class="half img-polaroid" src="/img/powerpoint_slide1.png"/>
-   <img class="half img-polaroid" src="/img/powerpoint_change_url.png"/>
-
-4. On Slide 2, change the screenshot to one of your own website. 
-
-   <img class="half img-polaroid" src="/img/powerpoint_slide2.png"/>
-   <img class="half img-polaroid" src="/img/powerpoint_change_screenshot.png"/>
-
-5. Adjust the location and size of the red rectangle to cover the target
-   to click, in this case, the "Contact" tab.
-
-   <img class="half img-polaroid" src="/img/powerpoint_change_screenshot.png"/>
-   <img class="half img-polaroid" src="/img/powerpoint_adjust_box.png"/>
-
-6. Execute your slides from the command line. Use the .pptx file name as the argument.
-
-{% highlight bash %}
-$ {{site.slides.executable}} execute helloworld.pptx 
-{% endhighlight %}
 
 

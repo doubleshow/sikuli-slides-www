@@ -14,22 +14,18 @@ This example has two slides, made using the Google Presentation. When executed, 
 <iframe src="https://docs.google.com/presentation/d/1w48gExh5oLIT0J8xYXR1RxpqTrZTXJC8OR4UXxShTQ8/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="400" height="300" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
 </iframe>
 
-There are two methods to open the slides and execute them on your own computer.
 
-**Method 1:** Download, Open, and Execute
+Follow the simple steps below to execute these two slides on your own computer:
 
-1. Download the slides from this link:
+1. Download the slides (.pptx) from this link:
 [helloworld.pptx](https://docs.google.com/feeds/download/presentations/Export?id=1w48gExh5oLIT0J8xYXR1RxpqTrZTXJC8OR4UXxShTQ8&&exportFormat=pptx)
 
-2. Open and execute the slides
+2. Start Sikuli Slides
+   <img src="/img/sikuli-slides_start.png" class="whole img-polaroid">
 
-{% highlight bash %}
-$ {{site.slides.executable}} execute helloworld.pptx 
-{% endhighlight %}
+3. Drag and drop the slides file (.pptx) into Sikuli Slides to open
+   <img src="/img/sikuli-slides_dragdrop.png" class="whole img-polaroid">
 
+4. Click the Play button to execute.
+   <img src="/img/sikuli-slides_execution.png" class="whole img-polaroid">
 
-**Method 2:** Open and execute from an URL
-
-{% highlight bash %}
-$ {{site.slides.executable}} execute https://docs.google.com/presentation/d/1w48gExh5oLIT0J8xYXR1RxpqTrZTXJC8OR4UXxShTQ8/edit?usp=sharing
-{% endhighlight %}

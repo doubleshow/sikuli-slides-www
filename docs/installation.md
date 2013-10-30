@@ -20,5 +20,5 @@ Note: Some features require access to assistive devices, which are turned on by 
 
 ### Download
 
-Go to the [Download](\download\) page to download the latest .jar.
+Go to the [Download](\download\) page to download the latest installers.
 
