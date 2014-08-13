@@ -23,7 +23,8 @@ $ {{site.slides.executable}} execute http://slides.sikuli.org/helloworld.pptx
 If the file is a Google Presentation hosted on Google Drive, you can execute it by supplying its public sharing link. Make sure you have already set the file's sharing setting as "Anyone who has the link can **view**". This enables Sikuli Slides to download the file for you.
 
 {% highlight bash %}
-$ {{site.slides.executable}} execute https://docs.google.com/presentation/d/1w48gExh5oLIT0J8xYXR1RxpqTrZTXJC8OR4UXxShTQ8/edit?usp=sharing
+$ {{site.slides.executable}} execute \\
+   https://docs.google.com/presentation/d/1w48gExh5oLIT0J8xYXR1RxpqTrZTXJC8OR4UXxShTQ8/edit?usp=sharing
 {% endhighlight %}
 
 

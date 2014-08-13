@@ -17,15 +17,17 @@ This example has two slides, made using the Google Presentation. When executed, 
 
 Follow the simple steps below to execute these two slides on your own computer:
 
-1. Download the slides (.pptx) from this link:
-[helloworld.pptx](https://docs.google.com/feeds/download/presentations/Export?id=1w48gExh5oLIT0J8xYXR1RxpqTrZTXJC8OR4UXxShTQ8&&exportFormat=pptx)
+Download the slides (.pptx) from this link: [helloworld.pptx](https://docs.google.com/feeds/download/presentations/Export?id=1w48gExh5oLIT0J8xYXR1RxpqTrZTXJC8OR4UXxShTQ8&&exportFormat=pptx)
 
-2. Start Sikuli Slides
-   <img src="/img/sikuli-slides_start.png" class="whole img-polaroid">
+Start Sikuli Slides
 
-3. Drag and drop the slides file (.pptx) into Sikuli Slides to open
-   <img src="/img/sikuli-slides_dragdrop.png" class="whole img-polaroid">
+{% include figure.html src="/img/sikuli-slides_start.png" %}
 
-4. Click the Play button to execute.
-   <img src="/img/sikuli-slides_execution.png" class="whole img-polaroid">
+Drag and drop the slides file (.pptx) into Sikuli Slides to open
+
+{% include figure.html src="/img/sikuli-slides_dragdrop.png" %}
+
+Click the Play button to execute.
+
+{% include figure.html src="/img/sikuli-slides_execution.png" %}
 

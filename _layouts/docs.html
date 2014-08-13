@@ -1,23 +1,29 @@
 ---
 layout: default
 ---
+<div class="section">
+              
+        <!-- BLOGBAR -->
 
-  <section class="docs">
-    <div class="grid">
+        <aside class="blogbar col span_3_of_12">
+          {% for section in site.data.docpages %}
 
-      {% include docs_contents_mobile.html %}
+            <h5 class="aligned left">{{ section.name }}</h5>
 
-      <div class="unit four-fifths">
-        <article>
-          <h1>{{ page.title }}</h1>
-          {{ content }}
-          {% include section_nav.html %}
-        </article>
-      </div>
+              <ul>
+              {% for item in section.items %}
 
-      {% include docs_contents.html %}
+              <li class="aligned right"><a href="{{item.path}}">{{ item.title }}</a></li>
 
-      <div class="clear"></div>
+              {% endfor %}
+              </ul>
+          {% endfor %}
+        </aside>
 
-    </div>
-  </section>
+        <!-- BLOGCONTENT (blog) -->
+        <div class="blog col span_9_of_12">
+            {{ content }}                
+        </div>
+
+</div>
+

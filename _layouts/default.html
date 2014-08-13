@@ -1,12 +1,46 @@
-{% include top.html %}
+<!DOCTYPE html>
+<html>
 
-<body class="wrap">
-  {% include header.html %}
+{% include head.html %}
 
-  {{ content }}
+<body>
+<!-- WRAPPER -->
+<div class="wrapper">
 
-  {% include footer.html %}
-  {% include analytics.html %}
+    <!-- HEADER -->
+    <header class="header section">
+        <div class="col span_4_of_12">
+            <a href="/" class="logo">Sikuli Slides</a>
+        </div>
+        <nav class="col span_8_of_12 aligned right">
+            <ul class="mainmenu">
+                <li><a href="/docs/">Documentation</a></li>
+                <li><a href="/help/">Help</a></li>
+                <li><a href="/download/">Download</a></li>
+            </ul>
+        </nav>
+    </header> <!-- /header -->
+
+    <!-- Heading -->
+    <div class="heading section">
+        <h1><span> {{ page.title }}</span></h1>
+        <hr>
+    </div>
+
+    <!-- CONTENT -->    
+    <div class="content">
+
+        {{ content }}
+
+    </div>
+    <!-- /.content -->
+
+    <div class="fpadding cf"></div>
+
+</div>
+<!-- /.wrapper -->
+
+{% include footer.html %}
 
 </body>
 </html>

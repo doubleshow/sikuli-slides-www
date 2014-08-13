@@ -2,7 +2,6 @@
 layout: docs
 title: Welcome
 next_section: installation
-permalink: /docs/home/
 ---
 
 This site aims to be a comprehensive guide to Sikuli Slides. It covers topics such as installation, creating and executing slides, and using Sikuli Slides' API in your own programs.

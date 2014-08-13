@@ -3,10 +3,13 @@ layout: page
 title: Help
 permalink: /help/
 ---
+
 ## Bugs, Questions, Feature Requests
 
 If you want to report bugs, ask questions, or make feature requests, please
-* Create issues at our project's Github [Issue Tracker](https://github.com/sikuli/sikuli-slides/issues?state=open)
+
+* Create issues at our project's Github 
+[Issue Tracker](https://github.com/sikuli/sikuli-slides/issues?state=open)
 * Or feel free to email the developers directly.
 
 ## Developers

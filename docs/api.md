@@ -23,12 +23,10 @@ Sikuli Slides API allows you to execute Sikuli Slides directly from your own Jav
 
 {% endhighlight %}
 
-
-
 ## Hello World
 Suppose you have created a slide like below and saved it as [helloworld.pptx](/pptx/helloworld.pptx).
 
-<img src="/img/helloworld.jpg" class="half img-polaroid">
+{% include slide.html src="/img/helloworld.jpg" %}
 
 Below is a simple program to execute this file. When executed, the program reads the content of the file and displays the message "Hello World" in the center of the screen.
 
@@ -44,7 +42,7 @@ public class HelloWorld {
 
 You can use parameters to control certain behaviors of a slide's execution without needing to change the slide's content. Suppose you have created a slide like below and saved it as [hellouser.pptx](/pptx/hellouser.pptx). 
 
-<img src="/img/hellouser.jpg" class="half img-polaroid">
+{% include slide.html src="/img/hellouser.jpg" %}
 
 Note that this is similar to the Hello World example above, except that the second word in the message is parameterized as `<user>`. To define a parameter, simply enclose the name of the parameter by `<` and `>`. 
 
@@ -60,8 +58,9 @@ Slides.execute(new File("hellouser.pptx"), context);
 Here is another example that takes a username and a password as parameters to fill in a login form automatically.
 The presentation file is [login.pptx](/pptx/login.pptx). Its content is shown below.
 
-<img src="/img/login_username.jpg" class="half img-polaroid">
-<img src="/img/login_password.jpg" class="half img-polaroid">
+{% include slide.html src="/img/login_username.jpg" %}
+
+{% include slide.html src="/img/login_password.jpg" %}
 
 The code to execute this file with parameter values is shown below.
 

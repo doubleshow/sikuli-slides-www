@@ -16,7 +16,7 @@ A `Skip` tag tells Sikuli Slides to skip the action on this slide. This tag is u
 
 Consider the four slides below. Upon seeing the `Skip` tag on slide 3, Sikuli Slides will simply ignore it and continue to slide 4.
 
-<img src="/img/skip.jpg" class="whole img-polaroid">
+{% include figure.html src="/img/skip.jpg" %}
 
 ---
 
@@ -26,15 +26,18 @@ An `Optional` tag indicates that the action on this slide is optional. If the ac
 
 Suppose this is the screen you are currently seeing.
 
-<img src="/img/optional_screen.jpg" class="one-third img-polaroid">
+{% include figure.html src="/img/optional_screen.jpg" %}
 
 Consider the four slides below, designed to test the existence of four icons.
-<img src="/img/optional1.jpg" class="whole img-polaroid">
+
+{% include figure.html src="/img/optional1.jpg" %}
+
 The execution of these slides will succeed on the first two slides but fail on the third slide. The third slide checks whether the *Gmail* icon exists but the icon is not visible on the screen. The execution is aborted because of this failure.
 
 An `Optional` tag will change this abort-on-failure behavior. Let us add it to the third slide.
 
-<img src="/img/optional2.jpg" class="whole img-polaroid">
+{% include figure.html src="/img/optional2.jpg" %}
+
 When executing the third slide, Sikuli Slides will attempt to find the *Gmail* icon like before. But if it fails to find it, it will not stop the execution. Instead, it will continue to the next slide. Why is it useful? Suppose you anticipate that the *Gmail* icon may sometimes go missing. You want the execution to continue to check the other elements rather than giving up. Thus, it makes sense to make the checking of *Gmail* icon on slide 3 optional.
 
 ---
@@ -44,7 +47,8 @@ When executing the third slide, Sikuli Slides will attempt to find the *Gmail* i
 A `Bookmark` tag inserts a bookmark into a slide. Each bookmark is associated with a name. The name of the bookmark should be specified right after the keyword, for instance, `bookmark a`. The name of the bookmark is *not* case-sensitive. Bookmark tags are useful when you wish to jump directly to a particular slide indicated by its bookmark name. 
 
 Consider the four slides below (four.pptx). A tag `BOOKMARK A` is placed on the third slide. By default, the slides are still executed from the start to the end.
-<img src="/img/bookmark1.jpg" class="whole img-polaroid">
+
+{% include figure.html src="/img/bookmark1.jpg" %}
 
 But now you can tell Sikuli Slides that you want to start executing from the slide with the bookmark, for instance, using the command-line option `bookmark` like below:
 
@@ -54,8 +58,7 @@ $ {{site.slides.executable}} execute four.pptx -bookmark a
 
 Sikuli Slides will keep skipping slides until it finds the first slide with the bookmark whose name is *A*.
 
-<img src="/img/bookmark2.jpg" class="whole img-polaroid">
-
+{% include figure.html src="/img/bookmark2.jpg" %}
 
 ---
 
@@ -63,7 +66,7 @@ Sikuli Slides will keep skipping slides until it finds the first slide with the 
 
 A `Pause` tag indicates that the execution should pause at the slide *before* the action on the slide is executed. When paused, a button will appear in the lower-right corner of the screen, like below. 
 
-<img src="/img/pause.png" class="half img-polaroid">
+{% include figure.html src="/img/pause.png" %}
 
 To continue, you need to move the mouse cursor over there. This tag is useful if you want to intervene at some point during the execution, such as entering a password yourself or reading the text on the screen. When you are done, you can let the computer take over the control again, by moving the mouse to continue. For programmers, it is similar to adding a *break point* to a slide to stop execution at that point in order to debug.
 

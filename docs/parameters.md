@@ -10,13 +10,13 @@ Text-related actions such as `type`, `caption`, and `browser` need an extra stri
 	
 Here are examples of two slides for displaying a greeting message. 
 
-<div class="grid whole">
-	<div class="unit half">
-		<img src="/img/helloworld.jpg" class="whole img-polaroid"><br>
+<div class="section">
+	<div class="col span_6_of_12">
+		<img src="/img/helloworld.jpg" class="img-polaroid"><br>
 		<a href="/pptx/helloworld.pptx">helloworld.pptx</a>
 	</div>
-	<div class="unit half">
-		<img src="/img/hellouser.jpg" class="whole img-polaroid"><br>
+	<div class="col span_6_of_12">
+		<img src="/img/hellouser.jpg" class="img-polaroid"><br>
 		<a href="/pptx/hellouser.pptx">hellouser.pptx</a>
 	</div>
 </div>

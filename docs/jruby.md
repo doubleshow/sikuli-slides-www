@@ -67,11 +67,12 @@ Sikuli::Slides.execute "10steps.pptx", :logLevel => 'OFF'
 
 ### Hello Adam, Ben, Cindy
 
-<img src="/img/hellouser.jpg" class="one-third polaroid">
-
-hellouser.pptx
+<div class="section">
+<img src="/img/hellouser.jpg" class="col span_5_of_12 img-polaroid">
+</div>
 
 {% highlight ruby %}
+hellouser.pptx
 ["Adam","Ben","Cindy"].each do |name|
   Sikuli::Slides.execute "hellouser.pptx", :params => {:user => name}
 end
@@ -80,14 +81,16 @@ end
 
 ### Dictionary Attack
 
-<img src="/img/dictattack1.jpg"  class="unit one-quarter img-polaroid"/>
-<img src="/img/dictattack2.jpg"  class="unit one-quarter img-polaroid"/>
-<img src="/img/dictattack3.jpg"  class="unit one-quarter img-polaroid"/>
-<img src="/img/dictattack4.jpg"  class="unit one-quarter img-polaroid"/>
+<div class="section">
+<img src="/img/dictattack1.jpg"  class="col span_3_of_12 img-polaroid"/>
+<img src="/img/dictattack2.jpg"  class="col span_3_of_12 img-polaroid"/>
+<img src="/img/dictattack3.jpg"  class="col span_3_of_12 img-polaroid"/>
+<img src="/img/dictattack4.jpg"  class="col span_3_of_12 img-polaroid"/>
+</div>
 
-login.pptx
 
 {% highlight ruby%}
+# login.pptx
 # dictionary is an array of words
 dictionary.each do |word|
   begin
