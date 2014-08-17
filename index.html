@@ -4,8 +4,15 @@ title: Execute Your Slides
 overview: true
 ---
 
-<div class="section aligned center">
-  <img src="/img/concept.png" style="width:100%;">
+<div class="section portfolio">
+    {% for item in site.data.examples %}
+    <div class="work">
+        <img src="{{item.image}}" alt="">
+        <div class="mask">
+            <a href="{{item.url}}">{{item.title}}</a>
+        </div>
+    </div>
+    {% endfor %}}
 </div>
 
 <div class="section services aligned center">

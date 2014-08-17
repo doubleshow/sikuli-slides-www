@@ -221,7 +221,7 @@ h4{ font-size: 24px; line-height: 26px; font-weight: 300; letter-spacing: -1px; 
 h5{ font-size: 20px; line-height: 25px; font-weight: 300; margin-bottom: 12px; }
 h6{ font-size: 18px; line-height: 26px; margin-bottom: 12px; font-weight: 300; color:#999999; }
 
-.heading{ text-align: center; margin-bottom: 90px; padding: 0; position: relative; }
+.heading{ text-align: center; margin-bottom: 30px; padding: 0; position: relative; }
 .heading:first-child{ margin-bottom: 65px; }
 .heading img{ display: block; margin: auto; }
 .heading img + *{ margin-top: 24px; margin-bottom: 10px; display: inline-block; }
@@ -394,7 +394,7 @@ p.author ins{ font-size: 18px; color: #999999; }
 .portfolio > *{ display: inline-block; vertical-align: top; width: 300px; position: relative; }
 .mask{ position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: table; background-color: #E7543D; opacity: 0; font-size: 22px; text-align: center; }
 .work{ -webkit-backface-visibility: hidden; -webkit-transform: translateZ(0) scale(1.0, 1.0); }
-.work img{ width: 100%; }
+.work img{ width: 100%; border: 1px solid gray;}
 .work:hover .mask{ opacity: .99; }
 .mask > *{ display: table-cell; vertical-align: middle; color:#fff !important; text-decoration: none; opacity: 0; -webkit-transition: opacity 0.5s 0s ease-in-out; -moz-transition: opacity 0.5s 0s ease-in-out; -ms-transition: opacity 0.5s 0s ease-in-out; transition: opacity 0.5s 0s ease-in-out; }
 .work:hover .mask > *,
