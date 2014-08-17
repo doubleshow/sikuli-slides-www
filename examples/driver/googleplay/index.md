@@ -19,5 +19,5 @@ Source: [menu.pptx](menu.pptx)
 ## Run
 
 {% highlight bash %}
-$ {{site.slides.example_exec}} org.sikuli.slides.driver.examples.df7b503bae855f838e85.GooglePlayMenuExample
+$ {{site.slides.example_exec}} org.sikuli.slides.driver.examples.googleplay.MenuExample
 {% endhighlight %}
