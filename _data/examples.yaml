@@ -8,15 +8,15 @@
   image: /examples/player/twitter/Slide2.png
   url: /examples/player/twitter/
 
-- title: Walkthrough<br><i>Healthcare.gov</i>
-  type: basic
-  image: /examples/player/healthcaregov/Slide5.png
-  url: /examples/player/healthcaregov/  
-
 - title: Assertion<br><i>Basecamp</i>
   type: basic
   image: /examples/player/basecamp/Slide6.png
   url: /examples/player/basecamp/
+
+- title: Walkthrough<br><i>Healthcare.gov</i>
+  type: basic
+  image: /examples/player/healthcaregov/Slide5.png
+  url: /examples/player/healthcaregov/  
 
 - title: Label<br><i>Ellen's Selfie</i>
   type: basic
@@ -28,22 +28,22 @@
   image: /examples/player/kingdomrush/Slide3.png
   url: /examples/player/kingdomrush/
 
-- title: Parameters
+- title: Parameters<br><i>XE Converter</i>
   type: advanced
-  image: /examples/gui/parameters/slide.png
-  url: /docs/parameters/
+  image: /examples/player/xe/Slide4.png
+  url: /examples/player/xe/
 
-- title: Menu Icons
+- title: Menu Widgets<br><i>Google Play</i>
   type: advanced
   image: /examples/driver/googleplay/slide.jpg
   url: /examples/driver/googleplay/
 
-- title: Signup Form
+- title: Form Widgets<br><i>Mailchimp</i>
   type: advanced
   image: /examples/driver/mailchimp/slide.png
   url: /examples/driver/mailchimp/
 
-- title: Mobile Demo
+- title: Mobile Widgets<br><i>Mailchimp Singup</i>
   type: advanced
   image: /examples/driver/chase/slide1.png
   url: /examples/driver/chase/

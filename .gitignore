@@ -1,0 +1,20 @@
+# Eclipse specific settings #
+.classpath
+.settings
+.project
+
+# Java Files #
+*.class
+
+# Binaries
+bin/
+target/
+
+# Maven generated files
+dependency-reduced-pom.xml
+
+# Others
+.DS_Store
+_site/*
+theme*
+/images/
