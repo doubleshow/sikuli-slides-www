@@ -23,6 +23,11 @@
   image: /examples/player/ellen/Slide2.png
   url: /examples/player/ellen/  
 
+- title: Wait<br><i>YouTube Video</i>
+  type: basic
+  image: /examples/player/youtube/Slide4.png
+  url: /examples/player/youtube/  
+
 - title: Flash<br><i>Kingdom Rush</i>
   type: basic
   image: /examples/player/kingdomrush/Slide3.png
@@ -32,6 +37,11 @@
   type: advanced
   image: /examples/player/xe/Slide4.png
   url: /examples/player/xe/
+
+- title: Logic<br><i>YouTube Ads</i>
+  type: advanced
+  image: /examples/player/youtube/Slide3.png
+  url: /examples/player/youtube/    
 
 - title: Menu Widgets<br><i>Google Play</i>
   type: advanced
