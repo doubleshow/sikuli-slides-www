@@ -6,45 +6,74 @@ overview: true
 
 <!-- section -->
 <nav class="section">
-    <ul class="nav-portfolio">
-        <li><a href="#all" class="filter" data-filter="all">All Examples<ins>&nbsp;</ins></a></li>
-        <li><a href="#basic" class="filter" data-filter=".basic">Basic<ins>&nbsp;</ins></a></li>
-        <li><a href="#advanced" class="filter" data-filter=".advanced">Advanced<ins>&nbsp;</ins></a></li>
-    </ul>
+<ul class="nav-portfolio">
+<li><a href="#all" class="filter" data-filter="all">All Examples<ins>&nbsp;</ins></a></li>
+<li><a href="#basic" class="filter" data-filter=".basic">Basic<ins>&nbsp;</ins></a></li>
+<li><a href="#advanced" class="filter" data-filter=".advanced">Advanced<ins>&nbsp;</ins></a></li>
+</ul>
 </nav>
 <!-- /.section -->
 
 <div class="section portfolio works-container">
-    {% for item in site.data.examples %}
-    <div class="work mix {{item.type}}">
-        <img src="{{item.image}}" alt="">
-        <div class="mask">
-            <a href="{{item.url}}">{{item.title}}</a>
-        </div>
-    </div>
-    {% endfor %}
+{% for item in site.data.examples %}
+<div class="work mix {{item.type}}">
+<img src="{{item.image}}" alt="">
+<div class="mask">
+    <a href="{{item.url}}">{{item.title}}</a>
+</div>
+</div>
+{% endfor %}
 </div>
 
 <div class="section services aligned center">
-    <div class="col span_4_of_12">
-        <h4>What?</h4>
-        <p class="fs18">
-          Sikuli Slides turn presentation slides into executable programs for automating graphical user interfaces (GUI).
-        </p>
-        <a href="/docs/usage" class="">Basic Usage</a>
-    </div>
-    <div class="col span_4_of_12">
-        <h4>Who?</h4>
-        <p> If you have ever made slides with screenshots, now you can use Sikuli Slides to execute them on a live interface.</p>
-        <a href="/docs/actions" class="">Slides Examples</a>
-    </div>
-    <div class="col span_4_of_12">
-        <h4>How?</h4>
-        <p class="fs18">
-          <b>Create</b> slides using PowerPoint or Google Doc. <b>Execute</b> slides from a command-line, a GUI, or a Java program.</p>
-        <a href="/docs/editors" class="">Creating Slides</a> 
-    </div>
+<div class="col span_4_of_12">
+<h4>What?</h4>
+<p class="fs18">
+  Sikuli Slides turn presentation slides into executable programs for automating graphical user interfaces (GUI).
+</p>
+<a href="/docs/usage" class="">Basic Usage</a>
+</div>
+<div class="col span_4_of_12">
+<h4>Who?</h4>
+<p> If you have ever made slides with screenshots, now you can use Sikuli Slides to execute them on a live interface.</p>
+<a href="/docs/actions" class="">Slides Examples</a>
+</div>
+<div class="col span_4_of_12">
+<h4>How?</h4>
+<p class="fs18">
+  <b>Create</b> slides using PowerPoint or Google Doc. <b>Execute</b> slides from a command-line, a GUI, or a Java program.</p>
+<a href="/docs/editors" class="">Creating Slides</a> 
+</div>
 </div>
 
+<!-- section: TESTIMONIALS -->
+<div class="testimonials">
+    <div class="section">
+        <div class="col span_4_of_12">
+            <h3 class="color">Testimonials</h3>
+            <h6>From our users</h6>
+        </div>
+        <div class="col span_4_of_12">
+            <p>[Sikuli Slides] has been amazing ... We have a sikuli slide test runner and the webdriver functionality built into the Xebium framework ... gained a lot of exposure in the U.S. Govt.  </p>
+            <p class="author">Jaison Guglielmi, <ins>Sotera Defense Solutions</ins></p>
+        </div>
+        <div class="col span_4_of_12">
+            <p>I'm incredibly excited to see [Sikuli Slides] ... actual programming has always been a barrier. Sikuli Slides eliminates that barrier and I'm hoping the use of Sikuli among our teams will rise as a result.</p>
+            <p class="author">Dylan Sather, <ins>BrightRoll</ins></p>
+        </div>
+    </div>
+    <div class="section">
+        <div class="col span_4_of_12 empty">&nbsp;</div>
+        <div class="col span_4_of_12">
+            <p>I'm working with Sikuli-Slides and work very well. I have done a lot of scripts.</p>
+            <p class="author">Leochel Acosta, <ins>Digarc</ins></p>
+        </div>
+        <div class="col span_4_of_12">
+            <p>[Sikuli Slides] is AWESOME! Keep up the great work on Sikuli and SikuliSlides!</p>
+            <p class="author">Kerry Street, <ins>Being The Worst</ins></p>
+        </div>
+    </div>
+</div>
+<!-- /.testimonials -->
 
 
