@@ -43,17 +43,17 @@
   image: /examples/player/youtube/Slide3.png
   url: /examples/player/youtube/    
 
-- title: Menu Widgets<br><i>Google Play</i>
-  type: advanced
-  image: /examples/driver/googleplay/slide.jpg
-  url: /examples/driver/googleplay/
-
 - title: Form Widgets<br><i>Mailchimp</i>
   type: advanced
   image: /examples/driver/mailchimp/slide.png
   url: /examples/driver/mailchimp/
 
-- title: Mobile Widgets<br><i>Mailchimp Singup</i>
+- title: Mobile Widgets<br><i>Chase</i>
   type: advanced
   image: /examples/driver/chase/slide1.png
   url: /examples/driver/chase/
+
+- title: Scripting<br><i>JRuby</i>
+  type: advanced
+  image: /docs/jruby/code.png
+  url: /docs/jruby/

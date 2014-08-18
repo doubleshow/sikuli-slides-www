@@ -14,20 +14,22 @@ require 'sikuli-slides'
 Sikuli::Slides.execute "helloworld.pptx"
 {% endhighlight %}
 
+## Installation
+
 You must first install [JRuby](http://jruby.org/download) and [RubyGems](http://rubygems.org/) on your system. Then, you can do the following to install Sikuli Slides and run the *helloworld* program.
 
-1. Install the Sikuli Slides Gem. It will download and install everything you need.   
-    {% highlight bash %}
+Install the Sikuli Slides Gem. It will download and install everything you need.   
+{% highlight bash %}
 $ jruby -S gem install sikuli-slides
 {% endhighlight %}
     
-2. Tell JRuby to run in the 1.9 mode
-    {% highlight bash %}
+Tell JRuby to run in the 1.9 mode
+{% highlight bash %}
 $ export JRUBY_OPTS=--1.9
 {% endhighlight %}
 
-3. Run *helloworld.rb*
-	{% highlight bash %}
+Run *helloworld.rb*
+{% highlight bash %}
 $ jruby helloworld.rb
 {% endhighlight %}
 
@@ -61,16 +63,43 @@ Sikuli::Slides.execute "10steps.pptx", :logLevel => 'OFF'
 
 {% endhighlight %}
 
+## Example: Currency Conversion
 
-## More Examples
+### Code
+{% highlight ruby %}
+require 'sikuli-slides'
 
+# location to the online currency converter
+Sikuli::API.browse "http://www.xe.com/currencyconverter/#converter"
 
-### Hello Adam, Ben, Cindy
+# location to download slides
+slidesUrl = "http://slides.sikuli.org/examples/player/xe/convert.pptx"
 
-<div class="section">
-<img src="/img/hellouser.jpg" class="col span_5_of_12 img-polaroid">
+# execute the slides 10 times
+10.times do 
+  # each time, a random number between 1 and 1000 is generated
+  x = (1..1000).to_a.sample
+
+  # this number is given as a parameter to the slides
+  Sikuli::Slides.execute slidesUrl, :params => {:amount => x}
+end
+{% endhighlight %}
+
+### Slides
+<div class="section portfolio">
+  {% for x in (1..4) %}
+  <div class="work">
+    <img src="/examples/player/xe/convert/Slide{{x}}.png" alt=""> 
+    <div class="mask">
+    Slide {{ x }}
+    </div>
+  </div>
+  {% endfor %}
 </div>
 
+## Example: Hello Adam, Ben, Cindy
+
+### Code
 {% highlight ruby %}
 hellouser.pptx
 ["Adam","Ben","Cindy"].each do |name|
@@ -78,8 +107,12 @@ hellouser.pptx
 end
 {% endhighlight %}
 
+### Slides
+<div class="section">
+<img src="/img/hellouser.jpg" class="col span_5_of_12 img-polaroid">
+</div>
 
-### Dictionary Attack
+<!-- ### Dictionary Attack
 
 <div class="section">
 <img src="/img/dictattack1.jpg"  class="col span_3_of_12 img-polaroid"/>
@@ -103,5 +136,5 @@ dictionary.each do |word|
 	# an exception was raised because the "success" message is not found.
   end
 end
-{% endhighlight %}
+{% endhighlight %} -->
 
