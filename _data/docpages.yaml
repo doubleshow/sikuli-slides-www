@@ -1,0 +1,43 @@
+- name: Getting Started
+  items:
+    - title: Welcome
+      path: /docs/
+
+    - title: Installation
+      path: /docs/installation/
+
+    - title: Basic Usage
+      path: /docs/usage/
+
+- name: Creating Slides
+  items:
+    - title: Editors
+      path: /docs/editors/
+
+    - title: Actions
+      path: /docs/actions/
+
+    - title: Parameters
+      path: /docs/parameters/
+
+    - title: Controls
+      path: /docs/controls/  
+
+    - title: Recorder
+      path: /docs/recorder/  
+
+- name: Executing Slides
+  items:
+    - title: GUI
+      path: /docs/gui/
+
+    - title: Command Line
+      path: /docs/cmd/
+
+    - title: Java API
+      path: /docs/api/
+
+    - title: JRuby
+      path: /docs/jruby/
+
+
