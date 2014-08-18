@@ -4,15 +4,25 @@ title: Execute Your Slides
 overview: true
 ---
 
-<div class="section portfolio">
+<!-- section -->
+<nav class="section">
+    <ul class="nav-portfolio">
+        <li><a href="#all" class="filter" data-filter="all">All Examples<ins>&nbsp;</ins></a></li>
+        <li><a href="#basic" class="filter" data-filter=".basic">Basic<ins>&nbsp;</ins></a></li>
+        <li><a href="#advanced" class="filter" data-filter=".advanced">Advanced<ins>&nbsp;</ins></a></li>
+    </ul>
+</nav>
+<!-- /.section -->
+
+<div class="section portfolio works-container">
     {% for item in site.data.examples %}
-    <div class="work">
+    <div class="work mix {{item.type}}">
         <img src="{{item.image}}" alt="">
         <div class="mask">
             <a href="{{item.url}}">{{item.title}}</a>
         </div>
     </div>
-    {% endfor %}}
+    {% endfor %}
 </div>
 
 <div class="section services aligned center">
