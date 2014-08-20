@@ -6,73 +6,54 @@ permalink: /download/
 
 ## Latest - 1.5.0
 
-<table>
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Download</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><img src="/img/windows.png" style="float:left"><p><b>Windows Installer</b></p>
-		<p> 		
-		Click and execute <code>pptx</code> slides from the Explorer.
-		</p>
-	   </td>
-	      <td>
-	<a href="http://goo.gl/M9f1tf" class="download"
-		onClick="_gaq.push(['_trackEvent', 'Downloads', 'Download', 'sikuli-slides_windows-x64_1_4_0.exe'])">
-		sikuli-slides_windows-x64_1_4_0.exe
-	</a><br>
-	<a href="http://goo.gl/wGcAAW" class="download"
-		onClick="_gaq.push(['_trackEvent', 'Downloads', 'Download', 'sikuli-slides_windows_1_4_0.exe'])">
-		sikuli-slides_windows_1_4_0.exe
-	</a>	
-		  </td>	
-    </tr>	
-    <tr>	   
-      <td><img src="/img/mac.gif" style="float:left"/>
-		<p><b>Mac Installer</b></p>
-	   <p>
-		Click and execute <code>pptx</code> slides from the Finder.
-		</p>
-	   </td>
-	      <td>
-	<a href="http://goo.gl/oGgcD6" class="download"
-		onClick="_gaq.push(['_trackEvent', 'Downloads', 'Download', 'sikuli-slides_macos_1_4_0.dmg'])">
-		sikuli-slides_macos_1_4_0.dmg
-	</a>
-		  </td>	
-    </tr>	
-    <tr>
-      <td><img src="/img/java.png" style="float:left"/><p><b>Executable Jar</b></p>
-	  <p>
-		Run Sikuli Slides as a command-line program
-		</p>
-	   </td>
-	      <td>
-	<a href="/sikuli-slides-1.4.0.jar" class="download"
-		onClick="_gaq.push(['_trackEvent', 'Downloads', 'Download', 'sikuli-slides-1.4.0.jar'])">
-		sikuli-slides-1.4.0.jar
-	</a>
-		  </td>	
-    </tr>
-    <tr>
-      <td><img src="/img/java.png" style="float:left"/><p><b>API</b></p>
-	  <p>
-		Use Sikuli Slides' functionalities in your own Java projects</p>
-	   </td>
-	      <td>
-			<a href="/sikuli-slides-api-1.4.0.jar" class="download"
-			onClick="_gaq.push(['_trackEvent', 'Downloads', 'Download', 'sikuli-slides-api-1.4.0.jar'])">
-			sikuli-slides-api-1.4.0.jar
-			</a>
+<div class="section">
+        <div class="col span_2_of_12">
+            <h3 class="color">Installers</h3>
+        </div>
+        <div class="col span_9_of_12">
+        	<a href="https://dl.dropboxusercontent.com/u/5104407/slides.sikuli.org/download/sikuli-slides_windows-x64_1_5_0.exe" 
+			onClick="_gaq.push(['_trackEvent', 'Downloads', 'Download', 'sikuli-slides_windows-x64_1_5_0.exe'])"
+        	class="button"><i class="icon-windows" style="font-size:100%;"></i> Windows (64bits)</a>
+			<a href="https://dl.dropboxusercontent.com/u/5104407/slides.sikuli.org/download/sikuli-slides_windows_1_5_0.exe" 
+			onClick="_gaq.push(['_trackEvent', 'Downloads', 'Download', 'sikuli-slides_windows_1_5_0.exe'])"
+			class="button"><i class="icon-windows" style="font-size:100%;"> </i> Windows (32bits)</a> 
+        	<a href="https://dl.dropboxusercontent.com/u/5104407/slides.sikuli.org/download/sikuli-slides_macos_1_5_0.dmg" 
+        	onClick="_gaq.push(['_trackEvent', 'Downloads', 'Download', 'sikuli-slides_macos_1_5_0.dmg'])"
+        	class="button"><i class="icon-apple" style="font-size:100%;"></i> Mac (64bit)</a>
+        </div>
+</div>
 
-		  </td>	
-    </tr>
-  </tbody>
-</table>
+<div class="section">
+        <div class="col span_2_of_12">
+            <h3 class="color">Java</h3>
+        </div>
+        <div class="col span_9_of_12">
+        	<a href="https://dl.dropboxusercontent.com/u/5104407/slides.sikuli.org/download/sikuli-slides-1.5.0.jar" 
+			onClick="_gaq.push(['_trackEvent', 'Downloads', 'Download', 'sikuli-slides-1.5.0.jar'])"
+        	class="button">Executable Jar</a>
+        	<a href="https://dl.dropboxusercontent.com/u/5104407/slides.sikuli.org/download/sikuli-slides-api-1.5.0.jar" 
+        	onClick="_gaq.push(['_trackEvent', 'Downloads', 'Download', 'sikuli-slides-api-1.5.0.jar'])"
+        	class="button">API (without dependency)</a>        	
+        </div>
+</div>
+
+
+<div class="section">
+        <div class="col span_2_of_12">
+            <h3 class="color">Maven</h3>
+        </div>
+        <div class="col span_9_of_12">
+{% highlight html %}
+
+<dependency>
+	<groupId>org.sikuli</groupId>
+	<artifactId>sikuli-slides-api</artifactId>
+	<version>{{site.slides.version}}</version>
+</dependency>
+
+{% endhighlight %}
+        </div>
+</div>
 
 ### Requirements
 * **Windows and Mac OS X**: Java Runtime Environment (JRE) version 1.6 or newer.
